@@ -484,6 +484,11 @@ service fetch-swv /system/bin/fetch-swv
     class late_start
     oneshot
 
+service qrngd /system/bin/qrngd -f
+    class main
+    user root
+    group root
+
 # on property:gsm.sim.state=READY
 #    start diag_mdlog
 
