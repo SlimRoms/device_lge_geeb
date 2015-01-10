@@ -137,7 +137,6 @@ BOARD_SEPOLICY_UNION += \
        thermald.te \
        ueventd.te
 
-
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 USE_DEVICE_SPECIFIC_CAMERA:= true
