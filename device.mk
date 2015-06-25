@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
         device/lge/geeb/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
+# Add init.d file to disable stock mpdecision
+PRODUCT_COPY_FILES += \
+	device/lge/geeb/01mpdecision:system/etc/init.d/01mpdecision
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196608
 
