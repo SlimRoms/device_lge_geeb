@@ -123,6 +123,10 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
         device/lge/geeb/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
+# Add kernel config
+PRODUCT_COPY_FILES += \
+    device/lge/geeb/init.slim.kernel.sh:system/bin/init.slim.kernel.sh
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196608
 
